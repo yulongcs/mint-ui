@@ -1,11 +1,10 @@
 <template>
-  <div id="app">
-    <img src="./assets/img/logo.png">
-    <router-view/>
-  </div>
+  <router-view v-wechat-title="$route.meta.title"></router-view>
 </template>
 
 <script>
+import './assets/css/base.less';
+
 export default {
   name: 'App',
 };
